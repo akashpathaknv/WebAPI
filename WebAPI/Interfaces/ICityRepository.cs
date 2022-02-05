@@ -9,6 +9,7 @@ namespace WebAPI.Interfaces
     public interface ICityRepository
     {
         Task<IEnumerable<City>> GetCitiesAsync();
+        Task<City> GetCity(int id);
         void AddCity(City city);
         void DeleteCity(int cityId);
         

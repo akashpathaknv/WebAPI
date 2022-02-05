@@ -16,6 +16,7 @@ namespace WebAPI.Data.Repository
             _dataContext = dataContext;
         }
         public ICityRepository CityRepository => new CityRepository(_dataContext);
+        public IUserRepository UserRepository => new UserRepository(_dataContext);
 
         
 

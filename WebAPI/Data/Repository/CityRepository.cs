@@ -37,6 +37,9 @@ namespace WebAPI.Repository
             return await _dataContext.Cities.ToListAsync();
         }
 
-        
+        public async Task<City> GetCity(int id)
+        {
+            return await _dataContext.Cities.FindAsync(id);
+        }
     }
 }
